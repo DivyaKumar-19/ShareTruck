@@ -1,0 +1,44 @@
+.features-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fff;
+    /* height: 60vh; */
+  
+  }
+  
+  .features-row {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: 240px;
+  }
+  
+  .feature-card {
+    flex: 1 1 23%; /* Ensure 4 cards fit in a row with space for gaps */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #fff;
+    margin: 0 10px; /* Margin to create spacing between cards */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .feature-icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .feature-title {
+    font-size: 1.25em;
+    margin: 10px 0;
+  }
+  
+  .feature-description {
+    font-size: 1em;
+    color: #666;
+  }
+  

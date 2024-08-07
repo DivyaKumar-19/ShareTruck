@@ -1,0 +1,36 @@
+.document-verification-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.document-verification-form label {
+  margin-top: 10px;
+}
+
+.document-verification-form input,
+.document-verification-form select,
+.document-verification-form textarea {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.document-verification-form textarea {
+  resize: vertical; /* Allow vertical resizing */
+  max-height: 150px; /* Limit the height */
+}
+
+.document-verification-form button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #194a61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.document-verification-form button:hover {
+  background-color: #0056b3;
+}

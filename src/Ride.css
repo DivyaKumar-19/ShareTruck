@@ -1,0 +1,204 @@
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #EFF5F5;
+    padding: 20px;
+}
+.card {
+    max-height: 300px; /* Adjust this value to fit your design */
+    overflow: hidden; /* Hide content that exceeds the card's height */
+    padding: 15px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding and border in the element’s total width and height */
+    
+}
+
+.card img {
+    max-width: 100%; /* Ensure images do not overflow */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.card .button {
+    margin-top: 10px; /* Adjust spacing for buttons if needed */
+}
+
+/* Optional: Adjust specific card content if needed */
+.booking-card, .pickup-point-card, .payment-card, .driver-card, .track-ride-card, .feedback-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out content if necessary */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+.button {
+    background-color: #194a61;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    width: 50%;
+    margin-right: 20px;
+}
+
+.location-input input,
+.feedback input {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin: 5px 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.payment-details {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: left;
+    margin-top: 0px;
+}
+
+.payment-details label {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.ride-details,
+.feedback {
+    text-align: left;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.ride-details div,
+.feedback div {
+    margin-bottom: 10px;
+}
+
+.rating {
+    color: #ff7f00;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    /* margin-bottom: 10px;
+    margin-right: 230px; */
+}
+
+.driver-details div {
+    margin: 5px 0;
+}
+
+.driver-details {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.star.selected {
+    color: #ff7f00;
+}
+
+.rating-scale {
+    display: flex;
+    gap: 5px;
+}
+
+.star {
+    cursor: pointer;
+    font-size: 20px;
+    transition: color 0.2s;
+}
+.ride-details i {
+    margin-right: 8px;
+    color: #333; /* Adjust color as needed */
+    margin-top: 40px;
+}
+.location-input .input-group {
+    margin-bottom: 16px; /* Adjust spacing as needed */
+}
+
+.location-input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+
+
+.input-group label {
+    flex: 10 0 100px; /* Adjust width as needed */
+    margin-right: 26px; /* Spacing between label and input */
+    font-weight: bold; /* Optional, for emphasis */
+}
+
+
+
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px; /* Adjust spacing as needed */
+}
+
+.input-group label {
+    flex: 0 0 100px; /* Adjust width as needed */
+    margin-right: 16px; /* Spacing between label and input */
+    font-weight: bold; /* Optional, for emphasis */
+}
+
+.input-wrapper {
+    position: relative;
+    flex: 1; /* Make input-wrapper take the remaining space */
+}
+
+.input-wrapper .icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 16px; /* Adjust icon size */
+    color: #333; /* Adjust color as needed */
+}
+
+.input-wrapper input {
+    padding-left: 30px; /* Adjust padding to make room for the icon */
+    width: 70%; /* Full width of the wrapper */
+}

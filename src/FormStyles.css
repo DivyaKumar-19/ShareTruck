@@ -1,0 +1,120 @@
+/* Container for the form */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto; /* Centers the form on the page */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* Header for the form */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Each form group */
+.form-group {
+    display: flex; /* Use flexbox to align label and input horizontally */
+    align-items: center; /* Vertically center align items */
+    margin-bottom: 15px;
+}
+
+/* Label for each form input */
+label {
+    flex: 0 0 150px; /* Fixed width for the label */
+    margin-right: 10px; /* Space between label and input */
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+    text-align: right; /* Right align the label text */
+}
+
+/* Input fields for text, email, phone, and textarea */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    flex: 1; /* Make the input take up remaining space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    font-size: 14px;
+}
+
+/* Textarea field */
+textarea {
+    resize: vertical; /* Allows vertical resizing of the textarea */
+    min-height: 100px; /* Sets a minimum height for the textarea */
+}
+
+/* Dropdown (select) field */
+select {
+    height: 40px; /* Sets a fixed height for the select box */
+}
+
+/* Submit button */
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for background color */
+    margin-top: 20px; /* Space above the button */
+}
+
+/* Hover effect for the button */
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Additional styling for better user experience */
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none; /* Removes the default outline on focus */
+    border-color: #80bdff; /* Changes border color on focus */
+    box-shadow: 0 0 5px rgba(128, 189, 255, 0.5); /* Adds a shadow on focus */
+}
+
+/* Container for form transition */
+.form-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Transition effect */
+.form-wrapper > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.form-wrapper.step-1 > div:first-child {
+    transform: translateX(0);
+}
+
+.form-wrapper.step-1 > div:last-child {
+    transform: translateX(100%);
+}
+
+.form-wrapper.step-2 > div:first-child {
+    transform: translateX(-100%);
+}
+
+.form-wrapper.step-2 > div:last-child {
+    transform: translateX(0);
+}

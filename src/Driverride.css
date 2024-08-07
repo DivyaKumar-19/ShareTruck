@@ -1,0 +1,121 @@
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    /* background-color: #e0e7ff;00 */
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  .bus-sear-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+  }
+  
+  /* .content1 {
+    width: 90%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px gray;
+  } */
+  
+  .results1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .result1-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .result1-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px gray;
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 90px;
+    margin-left: 110px;
+   
+    
+  }
+  
+  .result1-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .result1-info h4 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #111827;
+  }
+  
+  .result1-info p {
+    margin: 0;
+    color: #6b7280;
+  }
+  
+  .route-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .route-info i {
+    font-size: 1.2em;
+    color: #3b82f6;
+  }
+  
+  .new-book-btn {
+    padding: 10px 20px;
+    background-color: #194a61;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 1em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .new-book-btn i {
+    font-size: 1.2em;
+  }
+  
+  .new-book-btn:hover .moving-truck {
+    animation: moveTruck 0.5s infinite alternate;
+  }
+  
+  @keyframes moveTruck {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(5px);
+    }
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-top: 1px solid #e5e7eb;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    color: #6b7280;
+  }
+  

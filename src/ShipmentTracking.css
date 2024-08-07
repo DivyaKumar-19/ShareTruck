@@ -1,0 +1,91 @@
+.shipment-tracking {
+    font-family: Arial, sans-serif;
+    width: 500px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .shipment-tracking h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .shipment-details .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .shipment-details .delivered {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 10px;
+  }
+  
+  .shipment-details .timeline {
+    margin: 20px 0;
+    position: relative;
+  }
+  
+  .shipment-details .event {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .shipment-details .time {
+    width: 60px;
+    font-size: 12px;
+    text-align: right;
+    padding-right: 10px;
+    border-right: 1px solid #ddd;
+  }
+  
+  .shipment-details .status {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .shipment-details .status .circle {
+    width: 15px;
+    height: 15px;
+    background-color: #28a745;
+    border-radius: 50%;
+    position: absolute;
+    left: -8px; /* Center the circle */
+    z-index: 1; /* Ensure the circle is above the line */
+  }
+  
+  .shipment-details .status .line {
+    width: 2px;
+    background-color: #333; /* Dark line color */
+    height: calc(100% + 20px); /* Extend the line */
+    position: absolute;
+    left: 0; /* Adjust to align with the circle */
+    top: 0;
+    z-index: 0; /* Ensure the line is below the circle */
+  }
+  
+  .shipment-details .details {
+    font-size: 12px;
+    margin-top: 5px;
+    padding-left: 25px; /* Indent details text */
+  }
+  
+  .shipment-details .footer {
+    font-size: 12px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+  }
+  

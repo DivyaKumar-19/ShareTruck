@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:white;
+}
+
+.booking-list {
+    width: 60%;
+    margin: 20px auto;
+    padding: 10px;
+    /* background-color: skyblue; */
+    border-radius: 40px;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #333;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.booking-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    width:90%;
+    padding-left: 30px;
+}
+
+.booking-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.time-location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width :30%;
+    padding-left: 0px;
+}
+
+.time-location .time {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.duration {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .location span {
+    font-size: 1.2em;
+    color: #333;
+} */
+
+.ratings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ratings span {
+    font-size: 1em;
+    color: #333;
+}
+
+.driver-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.driver-details img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.driver-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
+.driver-name {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.rating {
+    font-size: 1em;
+    color: #666;
+}
+
+.price {
+    font-size: 1.5em;
+    color: #007bff;
+    font-weight: bold;
+}
+.ratings {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #777;
+    margin-top: 12px;
+    
+  }
+  
+  .route-button {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    /* color: #333; */
+    width: 150px; /* Set a specific width */
+    justify-content: center; /* Center the content */
+    background-color: white; /* Set background color to white */
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ratings button:focus {
+    outline: none;
+    /* Remove default focus outline */
+  }
+  
+  .ratings button:active {
+    background-color: #004080; /* Even darker shade for active state */
+  }
+  .driver-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }  
+  .route-button {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    justify-content: center; /* Center the content */
+    background-color: transparent; /* Remove background color */
+    padding: 0; /* Remove padding */
+    border: none; /* Remove border */
+  }
+  
+  .route-button:hover {
+    background-color: transparent; /* Prevent background color change on hover */
+    color: #333; /* Maintain text color on hover */
+  }

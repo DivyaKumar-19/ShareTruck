@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.auto-road {
+  position: relative;
+  height: 100vh;
+  background: url('https://ozzmata.com/wp-content/uploads/2018/11/cap_logistics_12.png') no-repeat center center/cover;
+}
+
+.auto-road-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  color: #fdb833;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav li {
+  color: white;
+  cursor: pointer;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100% - 80px); /* Adjusting for header height */
+  padding: 0 50px;
+  color: white;
+}
+
+.text-content {
+  max-width: 500px;
+}
+
+.text-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.text-content button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #194a61;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.form-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-left: 30px;
+  width: 50vh;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  color: black;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  color: gray;
+  font-size: 14px;
+}
+
+form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #194a61;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}

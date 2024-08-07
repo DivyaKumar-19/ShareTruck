@@ -1,0 +1,168 @@
+.body1{
+    background-color:#f8f8f8;
+}
+.bus-search-container {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+.search-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #005B96;
+    color: white;
+    padding: 10px 20px;
+}
+
+.route {
+    display: flex;
+    gap: 20px;
+}
+
+.date {
+    margin-right: 20px;
+}
+
+.update-search-btn {
+    background-color: #F39C12;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background-color:#EFF5F5;
+    padding: 20px;
+    width: 20%;
+    border: #ff5f5f;
+}
+
+.filter-section {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.filter-section h4 {
+    margin-bottom: 10px;
+}
+
+.filter-section button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.results {
+    width: 80%;
+    padding: 20px;
+}
+
+.result-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sort-options button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.result-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 110vh;
+    margin-left: 60px;
+}
+
+.result-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 0 10px gray;
+}
+
+.result-info h4 {
+    margin: 0 0 10px 0;
+    color: black;
+}
+
+.result-info p {
+    color: black;
+    margin: 5px 0;
+}
+
+.select-seat-btn {
+    background-color: #194a61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.driver-info {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Adjust the gap between elements as needed */
+  }
+  
+  .rating {
+    display: inline-block;
+    font-size: 16px; /* Adjust the font size as needed */
+  }
+  
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 600px;
+    max-height: 90vh; /* Ensure the modal does not exceed the viewport height */
+    overflow-y: auto; /* Enable vertical scrolling if the content overflows */
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  
+  .close-modal-btn {
+    background: #194a61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: 500px;
+  }
+  
+  
