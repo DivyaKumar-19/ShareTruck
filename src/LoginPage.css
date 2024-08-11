@@ -1,391 +1,121 @@
-/* .signup-page {
+/* LoginPage.css */
+
+/* General page styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Container for the entire page */
+.signup-page {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 40px;
   height: 100vh;
-  background-color: #f8f8f8;
 }
 
+/* Container for the login elements */
 .signup-container {
   display: flex;
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow:0 0 10px gray;
   overflow: hidden;
+  max-width: 800px;
+  margin-top: 30px;
+  width: 90%;
+  height: 90vh;
+  background-image: url("https://img.freepik.com/free-vector/gradient-technological-background_23-2148884155.jpg");
+  
 }
 
-.signup-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.signup-form {
-  padding: 20px;
+/* Image section styling */
+.signup-image {
   flex: 1;
+  background: url('') no-repeat center center;
+  background-size: cover;
+  height: 100%;
+  min-height: 400px;
+}
+
+/* Form section styling */
+.signup-form {
+  flex: 1;
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
 }
 
 .signup-form h2 {
-  margin-bottom: 20px;
+  margin-top: 0;
+  color:white;
 }
 
-.signup-form form {
-  display: flex;
-  flex-direction: column;
-}
-
-.signup-form form div {
-  margin-bottom: 10px;
-}
-
-.signup-form form label {
-  margin-bottom: 5px;
- 
-}
-
-.signup-form form input {
-  padding: 10px;
+/* Form input styling */
+.signup-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-.signup-form .error {
-  color: red;
-  margin-bottom: 10px;
-}
-
-.signup-form .success {
-  color: green;
-  margin-bottom: 10px;
-}
-
+/* Button styling */
 .signup-form button {
-  padding: 10px;
-  background-color: #3498db;
-  color: white;
+  width: 50%;
+  padding: 12px;
+  background-color: #194a61;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
   cursor: pointer;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  
 }
 
+.signup-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Error and success message styling */
+.error {
+  color: #dc3545;
+  margin: 10px 0;
+}
+
+.success {
+  color: #28a745;
+  margin: 10px 0;
+}
+
+/* Link styling */
 .signup-link {
-  margin-top: 20px;
-  text-align: center;
+  margin-top: 15px;
+  color: white;
 }
 
 .signup-link a {
-  color: #3498db;
+  color: #007bff;
   text-decoration: none;
 }
 
 .signup-link a:hover {
   text-decoration: underline;
-} */
-
-/* 
-
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #333;
-  font-family: Arial, sans-serif;
 }
 
-.login-container1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .signup-container {
+    flex-direction: column;
+  }
 
-.login-form1 {
-  background-color: #222;
-  padding: 60px;
-  border-radius: 50%;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
-  text-align: center;
-  color: #00bfff;
-  width: 400px;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.login-form1 h2 {
-  margin-bottom: 30px;
-  font-size: 24px;
-}
-
-.input-group1 {
-  margin-bottom: 20px;
-}
-
-.input-group1 input {
-  width: 100%;
-  padding: 15px;
-  border: none;
-  border-radius: 5px;
-  outline: none;
-  background-color: #333;
-  color: #00bfff;
-  font-size: 16px;
-}
-
-.checkbox-group1 {
-  margin-bottom: 25px;
-  text-align: left;
-}
-
-.checkbox-group1 input {
-  margin-right: 10px;
-
-}
-
-.checkbox-group1 label {
-  color: #00bfff;
-}
-
-button1 {
-  padding: 15px 30px;
-  border: none;
-  border-radius: 5px;
-  background-color: #00bfff;
-  color: #fff;
-  font-size: 18px;
-  cursor: pointer;
-  outline: none;
-}
-
-button1:hover {
-  background-color: #009fdd;
-} */ 
-
-
-
-
-
-
-
-
- /* body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #1a3b69;
-  font-family: Arial, sans-serif;
-}
-
-.auth-container1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.auth-card1 {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
-  text-align: center;
-  width: 350px;
-  position: relative;
-}
-
-.tabs1 {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 20px;
-}
-
-.tab1 {
-  cursor: pointer;
-  font-weight: bold;
-  padding: 10px 20px;
-}
-
-.tab.active1 {
-  border-bottom: 2px solid #1a3b69;
-}
-
-.icon1 {
-  position: absolute;
-  top: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #1a3b69;
-  border-radius: 50%;
-  padding: 10px;
-}
-
-.icon1 img {
-  width: 50px;
-  height: 50px;
-}
-
-.auth-form1 {
-  display: flex;
-  flex-direction: column;
-}
-
-.input-group1 {
-  margin-bottom: 15px;
-}
-
-.input-group1 input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  outline: none;
-  background-color: #f5f5f5;
-  font-size: 14px;
-}
-
-.options1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.options1 input {
-  margin-right: 5px;
-}
-
-.options1 label {
-  font-size: 14px;
-}
-
-.options1 .forgot-password1 {
-  color: #1a3b69;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.button1 {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #1a3b69;
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-  outline: none;
-}
-
-.button1:hover {
-  background-color: #163057;
-}
-  */
-
-
-
-  /* LoginPage.css */
-  /* Set background image for the entire page */
-.page {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background: url('https://t4.ftcdn.net/jpg/06/76/62/85/360_F_676628596_4lclYgeznwvTvWBEjk4sCCt3mko3wfY0.jpg') no-repeat center center fixed;
-  background-size: cover;
-}
-
-.auth-container1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  /* background: rgba(0, 0, 0, 0.5); Optional: adds a semi-transparent overlay */
-}
-
-.auth-card1 {
-  position: relative;
-  background: transparent; /* Make the form background semi-transparent */
-  padding: 40px 20px 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px black;
-  text-align: center;
-  width: 390px;
-}
-
-.icon1 {
-  position: absolute;
-  top: -40px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #0a3a63;
-  padding: 10px;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.icon1 img {
-  width: 40px;
-  height: 40px;
-}
-
-.tabs1 {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 20px;
-}
-
-.tab {
-  cursor: pointer;
-  padding: 10px 20px;
-  border-radius: 5px;
-  background: #e0e0e0;
-}
-
-.tab.active {
-  background: #0a3a63;
-  color: #fff;
-}
-
-.auth-form1 {
-  display: flex;
-  flex-direction: column;
-}
-
-.input-group1 {
-  margin-bottom: 15px;
-}
-
-.input-group1 input {
-  width: 80%;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-  background-color: #e0e0e0;
-}
-
-button {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background: #0a3a63;
-  color: #fff;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #074052;
-}
-
-.error {
-  color: red;
-}
-
-.success {
-  color: green;
+  .signup-image {
+    height: 300px;
+    min-height: 200px;
+  }
 }

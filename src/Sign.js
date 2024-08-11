@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import './Sign.css'; // Import the CSS file
+import './Sign.css';
 import PrimarySearch from './cnav';
 
+
 const Sign = () => {
-  const [name, setName] = useState('');
+  const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [service, setService] = useState('');
-  const [aadhaar, setAadhaar] = useState('');
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
 
@@ -30,17 +30,13 @@ const Sign = () => {
 
     try {
       const requestBody = {
-        name,
+        username,
         email,
         password,
         userRole: service,
       };
 
-      if (service === 'customer') {
-        requestBody.aadhaar = aadhaar;
-      }
-
-      const response = await fetch('http://localhost:8080/users/register', {
+      const response = await fetch('http://localhost:8080/api/logins', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -49,17 +45,19 @@ const Sign = () => {
       });
 
       if (!response.ok) {
-        throw new Error('Failed to sign up');
+        const errorText = await response.text();
+        throw new Error(errorText);
       }
 
       setSuccess('Sign-up successful');
       setError('');
 
-      // Redirect based on the selected service
       if (service === 'customer') {
         navigate('/clanding');
       } else if (service === 'driver') {
-        navigate('/dnav');
+        navigate('/');
+      } else if (service === 'admin') {
+        navigate('/admin');
       }
     } catch (error) {
       setError(error.message);
@@ -81,8 +79,8 @@ const Sign = () => {
                 <label>Name:</label>
                 <input
                   type="text"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
                   required
                 />
               </div>
@@ -134,26 +132,24 @@ const Sign = () => {
                     />
                     Driver
                   </label>
+                  <label>
+                    <input
+                      type="radio"
+                      value="admin"
+                      checked={service === 'admin'}
+                      onChange={(e) => setService(e.target.value)}
+                    />
+                    Admin
+                  </label>
                 </div>
               </div>
-              {service === 'customer' && (
-                <div>
-                  <label>Aadhaar No:</label>
-                  <input
-                    type="text"
-                    value={aadhaar}
-                    onChange={(e) => setAadhaar(e.target.value)}
-                    required
-                  />
-                </div>
-              )}
               {error && <div className="error">{error}</div>}
               {success && <div className="success">{success}</div>}
               <button type="submit">Sign Up</button>
+              <div className="signup-link">
+                Already registered? <Link to="/loginpage">Login</Link>
+              </div>
             </form>
-            <div className="signup-link">
-              Already registered? <Link to="/loginpage">Login</Link>
-            </div>
           </div>
         </div>
       </div>

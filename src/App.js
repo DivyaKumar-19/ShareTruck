@@ -26,7 +26,7 @@ import Searchbtn from './Searchbtn';
 import Goods from './Goods';
 import WhyChoose from './Whychoose';
 import ShipmentTracking from './ShipmentTracking';
-import TruckPromo from './TruckPromo';
+
 import Footer from './Footer';
 import FeedbackForm from './Community';
 import NotificationPage from './NotificationPage';
@@ -40,10 +40,17 @@ import Brand from "./Brand";
 import Features from "./Features";
 import Driverride from "./Driverride";
 import ReceiverForm from "./ReceiverForm";
+import Dashboard from "./Dashboard";
+import { FormProvider } from './FormContext';
+import Admin from "./Admin";
+import UserManagement from "./UserManagement";
+import UserProfile from "./UserProfile";
+import HomePage from "./HomePage";
+
 
 function App() {
   return ( 
-    
+      <FormProvider>
     <Router>
       <Routes>
         <Route path="/sign" element={<Sign />} />
@@ -68,7 +75,7 @@ function App() {
         <Route path="/goods" element={<Goods/>}/>
         <Route path="/whychoose" element={<WhyChoose/>}/>
         <Route path="/shipmenttracking" element={<ShipmentTracking/>}/>
-        <Route path="/truckpromo" element={<TruckPromo/>}/>
+       
         <Route path="/community" element={<FeedbackForm/>}/>
         <Route path="/document-verification" component={<DocumentVerificationForm></DocumentVerificationForm>} />
         <Route path="/footer" component={<Footer/>}/>
@@ -82,8 +89,15 @@ function App() {
         <Route path="/brand" element={<Brand/>}/>
         <Route path="/features" element={<Features/>}/>
         <Route path="/driverride" element={<Driverride/>}/>
+        <Route path="/dashboard" element={<Dashboard/>}/>
+        <Route path="/admin" element={<Admin/>}/>
+        <Route path="/usermanagement" element={<UserManagement/>}/>
+        <Route path="/userprofile" element={<UserProfile/>}/>
+        <Route path="/homepage" element={<HomePage/>}/>
+        
       </Routes>
     </Router>
+    </FormProvider>
 
   );
 }

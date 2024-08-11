@@ -11,6 +11,7 @@
     overflow: hidden; /* Hide content that exceeds the card's height */
     padding: 15px; /* Adjust padding as needed */
     box-sizing: border-box; /* Include padding and border in the element’s total width and height */
+    box-shadow: 0 0 10px #194a61;
     
 }
 
@@ -39,7 +40,7 @@
 .card {
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px #194a61;
     padding: 20px;
     text-align: center;
     margin: 10px;

@@ -7,7 +7,7 @@ const Searchbtn = () => {
   return (
     <div> 
       <PrimarySearch/>
-      <div className="search-tour">
+      <div className="search-tour1">
         <input type="text" placeholder="Select your Departure" />
         <input type="text" placeholder="Select your Destination" />
         <input type="date" placeholder="Departure Date" />

@@ -25,6 +25,7 @@
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
     margin-bottom: 20px;
     margin-top: 20px;
+    box-shadow: 0 0 10px gray;
   }
   
   .feature-icon {

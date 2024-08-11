@@ -24,12 +24,12 @@ const Order = () => {
               <button className="track-button" onClick={handleOpen}>FEEDBACK</button> {/* Open modal */}
             </div>
             <div className="order-item">
-              <img src="https://png.pngtree.com/template/20190916/ourmid/pngtree-truck-trailer-transportation-logo-vector-image_306029.jpg" alt="Netting Mykonos Tunic Dress" />
+              <img src="https://uxwing.com/wp-content/themes/uxwing/download/logistics-shipping-delivery/truck-delivered-icon.png" alt="Netting Mykonos Tunic Dress" />
               <div className="item-details">
-                <h4>Netting Mykonos Tunic Dress</h4>
+                <h4>Electronics</h4>
                 <p>By: Milly Thomas</p>
-                <p>Size: S Qty: 1</p>
-                <p>Rs. 1250</p>
+                <p>Weight: 10kg</p>
+                <p>Rs. 12050</p>
               </div>
               <div className="item-status">
                 <p className="status">Status <span className="in-transit">In - Transit</span></p>
@@ -40,12 +40,12 @@ const Order = () => {
               <button className="track-button" onClick={handleOpen}>FEEDBACK</button> {/* Open modal */}
             </div>
             <div className="order-item">
-              <img src="https://png.pngtree.com/template/20190916/ourmid/pngtree-truck-trailer-transportation-logo-vector-image_306029.jpg" alt="Embroidered Sequin Mini Dress" />
+              <img src="https://uxwing.com/wp-content/themes/uxwing/download/logistics-shipping-delivery/truck-delivered-icon.png" alt="Embroidered Sequin Mini Dress" />
               <div className="item-details">
-                <h4>Embroidered Sequin Mini Dress</h4>
-                <p>By: Sonia Agrawal</p>
-                <p>Size: S Qty: 1</p>
-                <p>Rs. 1760</p>
+                <h4>Furnitures</h4>
+                <p>By: Milly Thomas</p>
+                <p>Weight:50kg</p>
+                <p>Rs. 10760</p>
               </div>
               <div className="item-status">
                 <p className="status">Status <span className="in-transit">Delivered</span></p>
@@ -56,12 +56,12 @@ const Order = () => {
               <button className="track-button" onClick={handleOpen}>FEEDBACK</button> {/* Open modal */}
             </div>
             <div className="order-item">
-              <img src="https://png.pngtree.com/template/20190916/ourmid/pngtree-truck-trailer-transportation-logo-vector-image_306029.jpg" alt="Embroidered Sequin Mini Dress" />
+              <img src="https://uxwing.com/wp-content/themes/uxwing/download/logistics-shipping-delivery/truck-delivered-icon.png" alt="Embroidered Sequin Mini Dress" />
               <div className="item-details">
-                <h4>Embroidered Sequin Mini Dress</h4>
-                <p>By: Sonia Agrawal</p>
-                <p>Size: S Qty: 1</p>
-                <p>Rs. 1760</p>
+                <h4>Furnitures</h4>
+                <p>By: Milly Thomas</p>
+                <p>Weight:40kg</p>
+                <p>Rs. 10760</p>
               </div>
               <div className="item-status">
                 <p className="status">Status <span className="in-transit">Delivered</span></p>

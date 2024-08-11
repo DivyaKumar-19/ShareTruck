@@ -4,7 +4,7 @@
   align-items: center;
   height: 100vh;
   background-color: white;
-  height: 90vh;
+  height: 100vh;
  
 }
 
@@ -13,10 +13,12 @@
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
+  height: 80vh;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   max-width: 800px;
   width: 100%;
   margin-bottom: 30px;
+  height: 70vh;
 }
 
 .signup-image {
@@ -42,23 +44,24 @@
 }
 
 .signup-form form div {
-  margin-bottom: 15px;
+  margin-bottom: 1px;
 }
 
 .signup-form label {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
-  color: black;
+  color: white;
 }
 
 .signup-form input[type="text"],
 .signup-form input[type="email"],
 .signup-form input[type="password"] {
-  width: 90%;
+  width: 80%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  margin-left: 30px;
 }
 
 .radio-group {

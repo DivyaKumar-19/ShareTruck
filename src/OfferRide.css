@@ -3,13 +3,13 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.auto-road {
+.auto-roads {
   position: relative;
   height: 100vh;
-  background: url('https://ozzmata.com/wp-content/uploads/2018/11/cap_logistics_12.png') no-repeat center center/cover;
+  background: url('https://i.pinimg.com/736x/dd/a9/a8/dda9a8c4c33b4223ae431a0f1e119f31.jpg') no-repeat center center/cover;
 }
 
-.auto-road-header {
+.auto-roads-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,7 +34,7 @@ nav li {
   cursor: pointer;
 }
 
-.main-content {
+.main-contents {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,16 +66,16 @@ nav li {
   cursor: pointer;
 }
 
-.form-container {
+.form-containers {
   background: white;
   padding: 20px;
   border-radius: 8px;
-  margin-left: 30px;
+  margin-left: 130px;
   width: 50vh;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.form-container h2 {
+.form-containers h2 {
   color: black;
   margin-bottom: 15px;
   font-size: 18px;
@@ -89,7 +89,7 @@ form label {
 }
 
 form input {
-  width: 100%;
+  width: 90%;
   padding: 8px;
   margin-bottom: 10px;
   border: 1px solid #ddd;

@@ -1,4 +1,4 @@
-.document-verification-form {
+/* .document-verification-form {
   display: flex;
   flex-direction: column;
 }
@@ -17,8 +17,8 @@
 }
 
 .document-verification-form textarea {
-  resize: vertical; /* Allow vertical resizing */
-  max-height: 150px; /* Limit the height */
+  resize: vertical; 
+  max-height: 150px; 
 }
 
 .document-verification-form button {
@@ -33,4 +33,70 @@
 
 .document-verification-form button:hover {
   background-color: #0056b3;
+} */
+
+.document-verification-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.document-verification-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.document-verification-form input,
+.document-verification-form select,
+.document-verification-form textarea,
+.document-verification-form button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.document-verification-form button {
+  background-color: #194a61;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.document-verification-form button:hover {
+  background-color: black;
+}
+
+.name-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  padding: 10px 20px;
+  border: none;
+  width: 40vh;
+  background-color: #194a61;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tabs button.active {
+  background-color: #8494a5;
+  color: white;
+}
+
+.tabs button:hover {
+  background-color: #02080e;
+  color: white;
 }

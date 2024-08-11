@@ -1,5 +1,5 @@
 /* Ensures the container takes up the full width and centers its content */
-.search-tour {
+.search-tour1 {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
@@ -14,7 +14,7 @@
 }
 
 /* Styles for input fields */
-.search-tour input {
+.search-tour1 input {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -22,7 +22,7 @@
 }
 
 /* Styles for the search button */
-.search-tour .search-btn {
+.search-tour1 .search-btn {
     background-color: #194a61;
     color: white;
     border: none;
@@ -32,6 +32,6 @@
     transition: background-color 0.3s;
 }
 
-.search-tour .search-btn:hover {
+.search-tour1 .search-btn:hover {
     background-color: #0056b3; /* Darker shade for hover effect */
 }

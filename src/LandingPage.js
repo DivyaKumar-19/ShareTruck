@@ -12,13 +12,16 @@ import Features from './Features';
 import Footer from './Footer';
 import Ride from './Ride';
 import React, { useRef } from 'react';
+import HomePage from './HomePage';
 const LandingPage = () => {
   // const featuresRef = useRef(null);
   return (
     <div>
       <Primary/>
       <main className="landing-page">
-        {/* <section className="hero-section">
+        {
+        
+        /* <section className="hero-section">
           <div className="hero-content">
             <h1>Welcome to SHARE TRUCK</h1>
             <p>Share your goods, save money, and Transport.</p>
@@ -197,14 +200,15 @@ const LandingPage = () => {
       
       </div>
       </footer> */}
-        <AutoRoad/>
-      <Brand/>
-        <Ride/>
-        <Features />
+        {/* <Ride/> */}
         {/* <Primary featuresRef={featuresRef} /> 
       <div ref={featuresRef}>
       </div> */}
-    <Footer/>
+        <AutoRoad/>
+        <Brand/>
+       <HomePage/>
+        <Features />
+        <Footer/>
       </main>
       
     </div>

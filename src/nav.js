@@ -171,12 +171,12 @@ export default function PrimarySearchAppBar() {
             </MenuItem>
             <MenuItem>
               <Typography textAlign="center">
-              <Link to="/trucksearch" style={{ textDecoration: 'none', color: 'white' }}>Offer Ride</Link>
+              <Link to="/usermanagement" style={{ textDecoration: 'none', color: 'white' }}>User</Link>
               </Typography>
             </MenuItem>
             <MenuItem>
               <Typography textAlign="center">
-                <Link to="/contact" style={{ textDecoration: 'none', color: 'white' }}>Contact Us</Link>
+                <Link to="/contact" style={{ textDecoration: 'none', color: 'white' }}>Service</Link>
               </Typography>
             </MenuItem>
             <IconButton

@@ -125,6 +125,9 @@ export default function Primary() {
       <MenuItem onClick={handleMenuClose}>
         <Link to="/sign" style={{ textDecoration: 'none', color: 'inherit' }}>Sign Up</Link>
       </MenuItem>
+      <MenuItem onClick={handleMenuClose}>
+        <Link to="/userprofile" style={{ textDecoration: 'none', color: 'inherit' }}>My Profile</Link>
+      </MenuItem>
     </Menu>
   );
 

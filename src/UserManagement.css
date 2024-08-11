@@ -1,0 +1,159 @@
+.user-management {
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .add-user-btn {
+    background-color: #194a61;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .search-box {
+    width: 50%;
+    margin-top: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .role-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: #fff;
+  }
+  
+  .role-badge.customer {
+    background-color: #194a61;
+  }
+  
+  .role-badge.admin {
+    background-color: #28a745;
+  }
+  
+  .role-badge.manager {
+    background-color: #ffc107;
+  }
+  
+  .role-badge.auditor {
+    background-color: #17a2b8;
+  }
+  
+  .role-badge.author {
+    background-color: #dc3545;
+  }
+  
+  .status-badge {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: #fff;
+  }
+  
+  .status-badge.not-logged-in {
+    background-color: #dc3545;
+  }
+  
+  .status-badge.active {
+    background-color: #28a745;
+  }
+  
+  .action-btn {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .action-btn.modify-role {
+    background-color: #ffc107;
+    color: #fff;
+  }
+  
+  .action-btn.remove-user {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .pagination button {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .header-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .save-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .save-message {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .popup-message {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000;
+  }
+  .go-to-management-btn {
+    background-color: #194a61; /* Blue color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
