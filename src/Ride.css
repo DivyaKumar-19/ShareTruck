@@ -40,7 +40,7 @@
 .card {
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 0 10px #194a61;
+    box-shadow: 0 0 10px gray;
     padding: 20px;
     text-align: center;
     margin: 10px;

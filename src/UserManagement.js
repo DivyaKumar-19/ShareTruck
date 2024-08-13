@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-
 import axios from 'axios';
 import './UserManagement.css';
 import PrimarySearchAppBar from './nav';
@@ -7,9 +6,11 @@ import PrimarySearchAppBar from './nav';
 const UserManagement = () => {
   const [users, setUsers] = useState([]);
   const [newUser, setNewUser] = useState({ username: '', email: '', password: '', userRole: '' });
+  const [editUser, setEditUser] = useState(null); // State to manage the user being edited
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(null);
   const [showForm, setShowForm] = useState(false); // State to manage form visibility
+  const [showEditForm, setShowEditForm] = useState(false); // State to manage update form visibility
 
   useEffect(() => {
     axios.get('http://localhost:8080/api/logins')
@@ -24,7 +25,11 @@ const UserManagement = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setNewUser(prevState => ({ ...prevState, [name]: value }));
+    if (editUser) {
+      setEditUser(prevState => ({ ...prevState, [name]: value }));
+    } else {
+      setNewUser(prevState => ({ ...prevState, [name]: value }));
+    }
   };
 
   const addUser = (e) => {
@@ -53,6 +58,29 @@ const UserManagement = () => {
       .catch(error => {
         console.error('There was an error deleting the user!', error);
         setError('There was an error deleting the user.');
+        setSuccess(null);
+      });
+  };
+
+  const startEditUser = (user) => {
+    setEditUser(user);
+    setShowEditForm(true);
+    setShowForm(false); // Hide the add user form if it's visible
+  };
+
+  const updateUser = (e) => {
+    e.preventDefault();
+    axios.put(`http://localhost:8080/api/logins/${editUser.id}`, editUser)
+      .then(response => {
+        setUsers(users.map(user => (user.id === editUser.id ? response.data : user)));
+        setEditUser(null);
+        setShowEditForm(false);
+        setSuccess('User updated successfully.');
+        setError(null);
+      })
+      .catch(error => {
+        console.error('There was an error updating the user!', error);
+        setError('There was an error updating the user.');
         setSuccess(null);
       });
   };
@@ -95,6 +123,34 @@ const UserManagement = () => {
         </div>
       )}
 
+      {showEditForm && editUser && (
+        <div className="form-container">
+          <form onSubmit={updateUser} className="add-user-form">
+            <span onClick={() => setShowEditForm(false)} className="close-icon">
+              <i className="fas fa-times"></i>
+            </span>
+            <h2>Edit User</h2>
+            <label>
+              Username:
+              <input type="text" name="username" value={editUser.username} onChange={handleChange} required />
+            </label>
+            <label>
+              Email:
+              <input type="email" name="email" value={editUser.email} onChange={handleChange} required />
+            </label>
+            <label>
+              Password:
+              <input type="password" name="password" value={editUser.password} onChange={handleChange} required />
+            </label>
+            <label>
+              Role:
+              <input type="text" name="userRole" value={editUser.userRole} onChange={handleChange} required />
+            </label>
+            <button type="submit" className="add-button">Update User</button>
+          </form>
+        </div>
+      )}
+
       <table className="user-table">
         <thead>
           <tr>
@@ -113,6 +169,7 @@ const UserManagement = () => {
               <td>{user.email}</td>
               <td>{user.userRole}</td>
               <td>
+                <button onClick={() => startEditUser(user)} className="edit-button">Edit</button>
                 <button onClick={() => deleteUser(user.id)} className="delete-button">Delete</button>
               </td>
             </tr>
@@ -124,3 +181,4 @@ const UserManagement = () => {
 };
 
 export default UserManagement;
+

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
 import './DocumentVerificationForm.css';
 
 const DocumentVerificationForm = () => {
@@ -16,6 +17,8 @@ const DocumentVerificationForm = () => {
   });
 
   const [activeTab, setActiveTab] = useState('personal');
+  const [submissionMessage, setSubmissionMessage] = useState('');
+  const navigate = useNavigate(); // Initialize the navigate function
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -37,7 +40,9 @@ const DocumentVerificationForm = () => {
 
     const formDataToSend = new FormData();
     Object.keys(formData).forEach((key) => {
-      formDataToSend.append(key, formData[key]);
+      if (formData[key]) {
+        formDataToSend.append(key, formData[key]);
+      }
     });
 
     try {
@@ -47,11 +52,19 @@ const DocumentVerificationForm = () => {
       });
 
       if (response.ok) {
-        console.log('Form data submitted successfully');
+        const responseData = await response.json();
+        setSubmissionMessage(responseData.message || 'Form data submitted successfully!');
+        console.log('Form data submitted successfully:', responseData);
+        
+        // Navigate to another page after successful submission
+        navigate('/clanding'); // Replace with your desired route
       } else {
-        console.error('Error submitting form data');
+        const errorData = await response.json();
+        setSubmissionMessage(errorData.message || 'Error submitting form data.');
+        console.error('Error submitting form data:', errorData);
       }
     } catch (error) {
+      setSubmissionMessage('Failed to submit form data. Please try again.');
       console.error('Error submitting form data:', error);
     }
   };
@@ -79,26 +92,26 @@ const DocumentVerificationForm = () => {
       {activeTab === 'personal' && (
         <div>
           <label htmlFor="firstName">First Name</label>
-          <input type="text" id="firstName" name="firstName" value={formData.firstName} onChange={handleChange} />
+          <input type="text" id="firstName" name="firstName" value={formData.firstName} onChange={handleChange} required />
 
           <label htmlFor="lastName">Last Name</label>
-          <input type="text" id="lastName" name="lastName" value={formData.lastName} onChange={handleChange} />
+          <input type="text" id="lastName" name="lastName" value={formData.lastName} onChange={handleChange} required />
 
           <label htmlFor="email">Email</label>
-          <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} />
+          <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required />
 
           <label htmlFor="phoneNumber">Phone Number</label>
-          <input type="tel" id="phoneNumber" name="phoneNumber" value={formData.phoneNumber} onChange={handleChange} />
+          <input type="tel" id="phoneNumber" name="phoneNumber" value={formData.phoneNumber} onChange={handleChange} required />
 
           <label htmlFor="address">Address</label>
-          <input type="text" id="address" name="address" value={formData.address} onChange={handleChange} />
+          <input type="text" id="address" name="address" value={formData.address} onChange={handleChange} required />
         </div>
       )}
 
       {activeTab === 'goods' && (
         <div>
           <label htmlFor="documentType">Goods Type</label>
-          <select id="documentType" name="documentType" value={formData.documentType} onChange={handleChange}>
+          <select id="documentType" name="documentType" value={formData.documentType} onChange={handleChange} required>
             <option value="" disabled>Please Select</option>
             <option value="electronics">Electronics</option>
             <option value="household">Household Items</option>
@@ -106,13 +119,13 @@ const DocumentVerificationForm = () => {
           </select>
 
           <label htmlFor="documentNumber">Quantity</label>
-          <input type="number" id="documentNumber" name="documentNumber" value={formData.documentNumber} onChange={handleChange} />
+          <input type="number" id="documentNumber" name="documentNumber" value={formData.documentNumber} onChange={handleChange} min="1" required />
 
           <label htmlFor="weight">Weight (kg)</label>
-          <input type="number" id="weight" name="weight" value={formData.weight} onChange={handleChange} min="0" max="1000" />
+          <input type="number" id="weight" name="weight" value={formData.weight} onChange={handleChange} min="0" max="1000" required />
 
           <label htmlFor="documentFile">Upload Document</label>
-          <input type="file" id="documentFile" name="documentFile" onChange={handleFileChange} />
+          <input type="file" id="documentFile" name="documentFile" onChange={handleFileChange} required />
 
           <label htmlFor="additionalComments">Additional Comments</label>
           <textarea id="additionalComments" name="additionalComments" value={formData.additionalComments} onChange={handleChange} rows="3"></textarea>
@@ -120,11 +133,17 @@ const DocumentVerificationForm = () => {
       )}
 
       <button type="submit">Submit</button>
+
+      {submissionMessage && <p className="submission-message">{submissionMessage}</p>}
     </form>
   );
 };
 
 export default DocumentVerificationForm;
+
+
+
+
 
 
 

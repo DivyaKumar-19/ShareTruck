@@ -7,21 +7,13 @@ const featuresData = [
     title: 'Real-Time Tracking',
     description: 'Track your shipment in real-time from pick-up to delivery with our advanced GPS system.'
   },
-//   {
-//     icon: '💰',
-//     title: 'Instant Quotes',
-//     description: 'Get instant quotes for your transportation needs with our easy-to-use online tool.'
-//   },
+
   {
     icon: '🔒',
     title: 'Secure Payment',
     description: 'Enjoy peace of mind with our secure and reliable payment options.'
   },
-//   {
-//     icon: '📂',
-//     title: 'Transport Provider Directory',
-//     description: 'Access a comprehensive directory of reliable transport providers at your fingertips.'
-//   },
+
   {
     icon: '📞',
     title: '24/7 Customer Support',

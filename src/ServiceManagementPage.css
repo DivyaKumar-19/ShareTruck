@@ -1,0 +1,54 @@
+.service-management-page {
+    padding: 20px;
+  }
+  
+  .add-vendor-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .add-vendor-link:hover {
+    background-color: #0056b3;
+  }
+  
+  .vendors-list {
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  

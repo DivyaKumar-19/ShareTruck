@@ -1,0 +1,118 @@
+.booking-management-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .add-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .add-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .form-container {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+  }
+  
+  .add-booking-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-booking-form label {
+    margin-bottom: 10px;
+  }
+  
+  .add-booking-form input, 
+  .add-booking-form select, 
+  .add-booking-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  .add-booking-form textarea {
+    resize: vertical;
+  }
+  
+  .close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #007bff;
+  }
+  
+  .close-icon:hover {
+    color: #0056b3;
+  }
+  
+  .bookings-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .bookings-table th,
+  .bookings-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .bookings-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .bookings-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .bookings-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333;
+  }
+  
+  .error-message, .success-message {
+    color: #d9534f;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .success-message {
+    color: #5bc0de;
+  }
+  

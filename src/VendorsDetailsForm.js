@@ -134,7 +134,7 @@
 
 import React, { useState } from 'react';
 import './VendorsDetailsForm.css';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Primary from './dnav';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -217,7 +217,9 @@ const VendorsDetailsForm = () => {
             <p className="terms">
               By proceeding, I agree to Share truck's <a href="/terms">Terms of Use</a> and acknowledge that I have read the <a href="/privacy">Privacy Policy</a>.
             </p>
+            
             <button type="submit" className="submit-button">SUBMIT</button>
+           
           </form>
         </div>
       </div>

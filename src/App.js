@@ -46,6 +46,8 @@ import Admin from "./Admin";
 import UserManagement from "./UserManagement";
 import UserProfile from "./UserProfile";
 import HomePage from "./HomePage";
+import ServiceManagementPage from "./ServiceManagementPage";
+import BookingManagementPage from "./BookingManagementPage";
 
 
 function App() {
@@ -94,6 +96,9 @@ function App() {
         <Route path="/usermanagement" element={<UserManagement/>}/>
         <Route path="/userprofile" element={<UserProfile/>}/>
         <Route path="/homepage" element={<HomePage/>}/>
+        <Route path="/servicemanagement" element={<ServiceManagementPage/>}/>
+        <Route path="/bookingmanagementpage" element={<BookingManagementPage/>}/>
+  
         
       </Routes>
     </Router>

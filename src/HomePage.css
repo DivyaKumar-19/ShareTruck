@@ -8,18 +8,18 @@
 .featuresdiv {
   display: flex;
   justify-content: space-around;
-  padding: 20px 0;
+  padding: 30px ;
   background-color: skyblue;
   height: 30vh;
   border-radius: 40px;
-  margin-left: 120px;
+  margin-left: 90px;
   width: 170vh;
 }
 
 .features-box1 {
   text-align: center;
   padding: 10px;
-  width: 90vh;
+  width: 100vh;
   /* max-width: 200px; */
 }
 
@@ -130,11 +130,26 @@
 .blog-card img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .blog-card p {
   margin-top: 10px;
   font-size: 1em;
   color: #555;
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.stat-box1:hover {
+  animation: bounce 1s ease;
 }

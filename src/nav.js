@@ -152,15 +152,23 @@ export default function PrimarySearchAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{ backgroundColor: '#6f99c3' }}>
+      <AppBar position="static" sx={{ backgroundColor: '#194a61' }}>
         <Toolbar>
+        <Box sx={{ display: 'flex', alignItems: 'center', mr: 2 }}>
+            {/* Add the logo here */}
+            <img
+              src="cargokreis.jpg" // Replace with the path to your logo
+              alt="Logo"
+              style={{ height: 40 }} // Adjust the size as needed
+            />
+          </Box>
           <Typography
             variant="h6"
             noWrap
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-            SHARE TRUCK
+            
           </Typography>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
@@ -176,7 +184,7 @@ export default function PrimarySearchAppBar() {
             </MenuItem>
             <MenuItem>
               <Typography textAlign="center">
-                <Link to="/contact" style={{ textDecoration: 'none', color: 'white' }}>Service</Link>
+                <Link to="/servicemanagement" style={{ textDecoration: 'none', color: 'white' }}>Service</Link>
               </Typography>
             </MenuItem>
             <IconButton

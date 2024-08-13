@@ -207,7 +207,10 @@ const LandingPage = () => {
         <AutoRoad/>
         <Brand/>
        <HomePage/>
+       <div id="features-section" className="features-section">
         <Features />
+      </div>
+        {/* <Features /> */}
         <Footer/>
       </main>
       

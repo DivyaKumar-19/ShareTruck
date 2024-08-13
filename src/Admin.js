@@ -54,7 +54,7 @@ const Admin = () => {
             <Card>
               <CardContent>
                 <Typography variant="h6">Active User</Typography>
-                <Typography variant="h4">35,049</Typography>
+                <Typography variant="h4">5,049</Typography>
                 <Typography variant="subtitle2" color="white">25% than last week</Typography>
               </CardContent>
             </Card>
@@ -62,8 +62,8 @@ const Admin = () => {
           <Grid item xs={12} md={3}>
             <Card>
               <CardContent>
-                <Typography variant="h6">Total Downloads</Typography>
-                <Typography variant="h4">100K</Typography>
+                <Typography variant="h6">Total Bookings</Typography>
+                <Typography variant="h4">10K</Typography>
                 <Typography variant="subtitle2" color="textSecondary">-13% than last week</Typography>
               </CardContent>
             </Card>
@@ -89,7 +89,7 @@ const Admin = () => {
           <Grid item xs={12} md={8}>
             <Card>
               <CardContent>
-                <Typography variant="h6">Book Downloads</Typography>
+                <Typography variant="h6">Booking Status</Typography>
                 <ResponsiveContainer width="100%" height={300}>
                   <BarChart data={data}>
                     <CartesianGrid strokeDasharray="3 3" />
@@ -136,7 +136,7 @@ const Admin = () => {
               </CardContent>
             </Card>
           </Grid>
-          <Grid item xs={12}>
+          {/* <Grid item xs={12}>
             <Card>
               <CardContent>
                 <Typography variant="h6">Recent Users</Typography>
@@ -156,7 +156,7 @@ const Admin = () => {
                 </TableContainer>
               </CardContent>
             </Card>
-          </Grid>
+          </Grid> */}
         </Grid>
         <Outlet />
       </Box>

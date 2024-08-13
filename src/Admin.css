@@ -1,53 +1,58 @@
-/* src/components/Admin.css */
-.admin-page {
-    padding: 20px;
+/* Admin.css */
+
+/* Container for the main section */
+.admin-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f4f6f8; /* Light gray background */
+}
+
+/* Main content area styling */
+.main-content {
+  flex-grow: 1;
+  padding: 24px; /* Added more padding for a spacious layout */
+  margin-top: 64px; /* Space for the header */
+  background-color: #ffffff; /* White background for the main content */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Card content styling */
+.card-content {
+  padding: 24px; /* Added padding inside cards */
+  text-align: center; /* Center align text */
+}
+
+/* Card header styling */
+.card-header {
+  margin-bottom: 16px;
+}
+
+/* Chart container styling */
+.chart-container {
+  margin-top: 16px;
+}
+
+/* Table container styling */
+.table-container {
+  margin-top: 16px;
+}
+
+/* Typography for headers */
+.card-header h6, .card-header h4 {
+  font-weight: 600; /* Bold headers */
+}
+
+/* Typography for subtitles */
+.card-content .subtitle2 {
+  font-weight: 400; /* Normal weight for subtitles */
+  color: #616161; /* Darker gray for better readability */
+}
+
+/* Responsive design tweaks */
+@media (max-width: 600px) {
+  .main-content {
+    padding: 16px; /* Less padding on smaller screens */
+    margin-top: 56px; /* Adjust margin for small screens */
   }
-  
-  .dashboard {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .dashboard-section {
-    margin-bottom: 20px;
-  }
-  
-  .dashboard-section ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .dashboard-section li {
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .delete-button {
-    background-color: red;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 5px 10px;
-    margin-left: 10px;
-    cursor: pointer;
-  }
-  
-  .delete-button:hover {
-    background-color: darkred;
-  }
-  
-  .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    background-color: #28a745;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .btn:hover {
-    background-color: #218838;
-  }
+}

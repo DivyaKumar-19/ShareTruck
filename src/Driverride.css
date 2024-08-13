@@ -1,7 +1,7 @@
-/* General styles */
+
 body {
     font-family: 'Roboto', sans-serif;
-    /* background-color: #e0e7ff;00 */
+    
     margin: 0;
     padding: 0;
     color: #333;
@@ -12,17 +12,10 @@ body {
     justify-content: center;
     align-items: center;
     padding: 40px;
-    background-color: #caf0f8;
+    background-color: white;
   }
   
-  /* .content1 {
-    width: 90%;
-    max-width: 1200px;
-    background-color: #ffffff;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px gray;
-  } */
+ 
   
   .results1 {
     display: flex;
@@ -66,7 +59,7 @@ body {
   
   .result1-info p {
     margin: 0;
-    /* color: #6b7280; */
+   
   }
   
   .route-info {
@@ -120,4 +113,4 @@ body {
     margin-top: 30px;
     color: #6b7280;
   }
-  
+ 

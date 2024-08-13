@@ -440,7 +440,7 @@ const UserProfile = ({ email }) => {
     firstName: '',
     lastName: '',
     phoneNumber: '',
-    email: email, // Pre-fill with the email prop
+    email: email, 
     city: '',
     state: '',
     postcode: '',
@@ -563,6 +563,21 @@ const UserProfile = ({ email }) => {
                   <p>{profileData.lastName}</p>
                 )}
               </div>
+              <div className="form-group1">
+                <label>Email</label>
+                {isEditing ? (
+                  <input
+                    type="text"
+                    name="lastName"
+                    placeholder="Email"
+                    value={profileData.email}
+                    onChange={handleChange}
+                    className="input1"
+                  />
+                ) : (
+                  <p>{profileData.lastName}</p>
+                )}
+              </div>
             </div>
             <div className="form-row1">
               <div className="form-group1">
@@ -580,10 +595,7 @@ const UserProfile = ({ email }) => {
                   <p>{profileData.phoneNumber}</p>
                 )}
               </div>
-              <div className="form-group1">
-                <label>Email address</label>
-                <p>{profileData.email}</p> {/* Email is read-only */}
-              </div>
+              
             </div>
             <div className="form-row1">
               <div className="form-group1">

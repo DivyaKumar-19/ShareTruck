@@ -139,6 +139,7 @@ const Driverride = () => {
       <Primary />
       <div className="bus-sear-container">
         <div className="content1">
+          {/* <img src='truck2.jpg'></img> */}
           <div className="results1">
             <div className="result1-cards">
               {/* User Input Data */}

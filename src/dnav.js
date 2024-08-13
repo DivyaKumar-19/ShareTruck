@@ -186,13 +186,21 @@ export default function Primary() {
         }}
       >
         <Toolbar>
+        <Box sx={{ display: 'flex', alignItems: 'center', mr: 2 }}>
+            {/* Add the logo here */}
+            <img
+              src="cargokreis.jpg" // Replace with the path to your logo
+              alt="Logo"
+              style={{ height: 40 }} // Adjust the size as needed
+            />
+          </Box>
           <Typography
             variant="h6"
             noWrap
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-            SHARE TRUCK
+            
           </Typography>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
